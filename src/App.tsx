@@ -9,7 +9,6 @@ import {
   deleteDoc,
   doc,
   onSnapshot,
-  orderBy,
   query,
   updateDoc,
   where,
@@ -93,7 +92,7 @@ function App() {
 
       if (editingTask) {
         // update existing document by its Firestore ID
-        await updateDoc(doc(db, "tasks", task.id), safeTask);
+        await updateDoc(doc(db, "tasks", task.id!), safeTask);
         setEditingTask(undefined);
         showMessage("✅ Task updated successfully", "success");
       } else {

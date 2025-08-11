@@ -103,7 +103,7 @@ const TaskForm: React.FC<Props> = ({ task, onSave, onDelete }) => {
         {task && onDelete && (
           <button
             type="button"
-            onClick={() => onDelete(task.id)}
+            onClick={() => onDelete(task.id!)}
             className="bg-red-500 hover:bg-red-600 text-white px-4 rounded-lg"
           >
             Delete

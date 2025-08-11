@@ -34,7 +34,7 @@ const TaskItem: React.FC<Props> = ({ task, onEdit, onToggleComplete }) => {
         type="checkbox"
         checked={task.done || false}
         onClick={(e) => e.stopPropagation()}
-        onChange={() => onToggleComplete(task.id)}
+        onChange={() => onToggleComplete(task.id!)}
         className="ml-4 w-5 h-5 cursor-pointer"
       />
     </div>
