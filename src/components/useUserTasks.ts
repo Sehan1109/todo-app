@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  collection,
-  query,
-  where,
-  onSnapshot,
-  orderBy,
-} from "firebase/firestore";
+import { collection, query, where, onSnapshot } from "firebase/firestore";
 import { db, auth } from "./Firebase";
 import type { Task } from "./Types";
 
