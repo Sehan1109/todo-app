@@ -4,6 +4,7 @@ type Props = {
   task: Task;
   onEdit: (task: Task) => void;
   onToggleComplete: (id: string) => void;
+  onDelete: (id: string) => void;
 };
 
 const TaskItem: React.FC<Props> = ({ task, onEdit, onToggleComplete }) => {
